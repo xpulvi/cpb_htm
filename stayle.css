@@ -1,0 +1,16 @@
+
+/* Stili per la barra di ricerca */
+#search-bar {
+    width: 300px;
+
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .col.p-3.bg-primzxary.text-white {
+    background-color: purple !important;
+  }
+
+ .titolo_app{
+  background-color: rgb(8, 161, 232) !important;
+ }
