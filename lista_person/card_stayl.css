@@ -1,0 +1,53 @@
+/* Stili per la carta */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  /* Stili per l'immagine nella carta */
+  .card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Stili per il corpo della carta */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Stili per il titolo della carta */
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Stili per il testo della carta */
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Stili per il link nella carta */
+  .card-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Stili per il pulsante nella carta */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

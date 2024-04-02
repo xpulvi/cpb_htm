@@ -44,14 +44,31 @@ function searchFunction() {
   let s = document.getElementById("person-list"); 
   let persone = await getElencoPersone(); 
   console.log(persone); 
-  for(let a = 0; a < persone.length; a++){
-      let opt = document.createElement("option"); 
-      opt.innerText = persone[a].name; 
-      s.appendChild(opt); 
+  const userCardsContainer = document.getElementById('person-list');
+
+  // Itera sugli utenti e crea una card per ognuno
+  persone.map(user => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const fullName = `${user.name} ${user.surname}`;
+    const nickname = user.who_get_nickname ? `(${user.who_get_nickname})` : '';
+    const age = user.age_at_death === 1000 ? '∞' : user.age_at_death; // "∞" per indicare età infinita
+
+    card.innerHTML = `
+      <h2>${fullName}</h2>
+      <p><strong>Description:</strong> ${user.descriptib_name}</p>
+      <p><strong>Nickname:</strong> ${user.nickname} ${nickname}</p>
+      <p><strong>Age at Death:</strong> ${age}</p>
+      <p><strong>Work:</strong> ${user.work}</p>
+      <p><strong>Wealthy:</strong> ${user.and_wealthy}</p>
+    `;
+
+    userCardsContainer.appendChild(card);
+  });
+    
   }
-  
-}
 
-popolaSelect();
+  popolaSelect();
 
-// id per la lista dellepersone: person-list
+  // id per la lista dellepersone: person-list
