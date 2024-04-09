@@ -54,7 +54,7 @@ function searchFunction() {
     const fullName = `${user.name} ${user.surname}`;
     const nickname = user.who_get_nickname ? `(${user.who_get_nickname})` : '';
     const age = user.age_at_death === 1000 ? '∞' : user.age_at_death; // "∞" per indicare età infinita
-
+    // non tocare gli ` apici
     card.innerHTML = `
       <h2>${fullName}</h2>
       <p><strong>Description:</strong> ${user.descriptib_name}</p>
