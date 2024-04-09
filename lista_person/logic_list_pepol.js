@@ -56,12 +56,15 @@ function searchFunction() {
     const age = user.age_at_death === 1000 ? '∞' : user.age_at_death; // "∞" per indicare età infinita
     // non tocare gli ` apici
     card.innerHTML = `
+    
+      <center> <img src="/imeg/icons8-user-96.png" alt="" width="90" height="100"> </center>
       <h2>${fullName}</h2>
       <p><strong>Description:</strong> ${user.descriptib_name}</p>
       <p><strong>Nickname:</strong> ${user.nickname} ${nickname}</p>
       <p><strong>Age at Death:</strong> ${age}</p>
       <p><strong>Work:</strong> ${user.work}</p>
       <p><strong>Wealthy:</strong> ${user.and_wealthy}</p>
+      <a href="/profilo_personagio/profilo.html" class="btn btn-primary">See Profile</a>
     `;
 
     userCardsContainer.appendChild(card);
