@@ -53,7 +53,7 @@ function searchFunction() {
 
     const fullName = `${user.name} ${user.surname}`;
     const nickname = user.who_get_nickname ? `(${user.who_get_nickname})` : '';
-    const age = user.age_at_death === 1000 ? '∞' : user.age_at_death; // "∞" per indicare età infinita
+    const age = user.age_at_death === 1000 ? '' : user.age_at_death; // "∞" per indicare età infinita
     // non tocare gli ` apici
     card.innerHTML = `
     

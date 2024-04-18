@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ccat-api": "^0.10.6",
     "vivagraphjs": "^0.12.0"
   }
 }

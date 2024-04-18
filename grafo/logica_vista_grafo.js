@@ -1,5 +1,6 @@
 // codice ripetuto coregere. il prima posibile -----------------------
 // ----- roba per il colegamento lista database -----
+/*
 async function getElencoPersone() {
     try {   
         const response = await fetch('http://localhost:8080/person/list');
@@ -45,8 +46,11 @@ async function getElencoPersone() {
     });
       
     }
+    */
 
 // fine codice ripetuto.  ----------------------------------------------
+
+const logic_list_pepol = require('D:\Develop\workSpace\fornt end\cpb_htm\lista_person\logic_list_pepol.js');
 
 function main () {
             
