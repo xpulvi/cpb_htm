@@ -50,7 +50,6 @@ async function getElencoPersone() {
 
 // fine codice ripetuto.  ----------------------------------------------
 
-const logic_list_pepol = require('D:\Develop\workSpace\fornt end\cpb_htm\lista_person\logic_list_pepol.js');
 
 function main () {
             
@@ -76,7 +75,7 @@ function main () {
     graph.addLink('anvaka', 'john');
 
     graph.addLink('john', 'eva');
-
+    
     // Set custom nodes appearance
     var graphics = Viva.Graph.View.svgGraphics();
     graphics.node(function(node) {
