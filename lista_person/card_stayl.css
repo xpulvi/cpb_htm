@@ -31,10 +31,9 @@
     margin-bottom: 1.25rem;
   }
   
-  /* Stili per il link nella carta */
+  /* Stili per il link nella card */
   .card-link {
     text-decoration: none;
-    color: #fff;
   }
   
   /* Stili per il pulsante nella carta */

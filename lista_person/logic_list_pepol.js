@@ -56,15 +56,21 @@ function searchFunction() {
     const age = user.age_at_death === 1000 ? '' : user.age_at_death; // "∞" per indicare età infinita
     // non tocare gli ` apici
     card.innerHTML = `
-    
-      <center> <img src="/imeg/icons8-user-96.png" alt="" width="90" height="100"> </center>
-      <h2>${fullName}</h2>
-      <p><strong>Description:</strong> ${user.descriptib_name}</p>
-      <p><strong>Nickname:</strong> ${user.nickname} ${nickname}</p>
-      <p><strong>Age at Death:</strong> ${age}</p>
-      <p><strong>Work:</strong> ${user.work}</p>
-      <p><strong>Wealthy:</strong> ${user.and_wealthy}</p>
-      <a href="/profilo_personagio/profilo.html" class="btn btn-primary">See Profile</a>
+        <img src="/imeg/icons8-user-96.png" class="card-img-top mx-auto mt-3" style="max-width:50px;" alt="Picture of ${fullName}">
+        <div class="card-body">
+          <h5 class="card-title">${fullName}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Description:</strong> ${user.descriptib_name}</li>
+          <li class="list-group-item"><strong>Nickname:</strong> ${user.nickname} ${nickname}</li>
+          <li class="list-group-item"><strong>Age at Death:</strong> ${age}</li>
+          <li class="list-group-item"><strong>Work:</strong> ${user.work}</li>
+          <li class="list-group-item"><strong>Wealthy:</strong> ${user.and_wealthy}</li>
+        </ul>
+        <div class="card-body">
+          <a href="/profilo_personagio/profilo.html" class="card-link">See details </a>
+        </div>
     `;
 
     userCardsContainer.appendChild(card);

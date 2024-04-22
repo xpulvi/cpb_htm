@@ -2,6 +2,7 @@ function submitForm() {
     const form = document.getElementById('json_ad_pepol');
     const formData = new FormData(form);
 
+    console.log(formData); 
     fetch('http://localhost:8080/person/insert', {
         method: 'POST',
         body: formData
