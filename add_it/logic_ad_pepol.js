@@ -5,7 +5,13 @@ function submitForm() {
     console.log(formData); 
     fetch('http://localhost:8080/person/insert', {
         method: 'POST',
-        body: formData
+        body: JSON.stringify({
+            "name":name,
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
     })
     .then(response => {
         if (response.ok) {
