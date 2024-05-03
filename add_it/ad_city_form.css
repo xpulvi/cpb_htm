@@ -6,7 +6,7 @@ main {
     height: 100vh;
 }
 
-.add_pepol_form {
+#form_page_book {
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
@@ -15,15 +15,14 @@ main {
     margin: 0 auto;
 }
 
-.add_pepol_form label {
+#form_page_book .form-label {
     color: #eee;
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 600;
 }
 
-.add_pepol_form input[type="text"],
-.add_pepol_form input[type="file"] {
+#form_page_book .form-control {
     background-color: #303245;
     border-radius: 12px;
     border: 0;
@@ -37,7 +36,7 @@ main {
     margin-bottom: 20px;
 }
 
-.add_pepol_form button {
+#form_page_book .btn-primary {
     background-color: #08d;
     border-radius: 12px;
     border: 0;
@@ -51,6 +50,10 @@ main {
     width: 100%;
 }
 
-.add_pepol_form button:active {
+#form_page_book .btn-primary:active {
     background-color: #06b;
+}
+
+#form_page_book .mb-3 {
+    margin-bottom: 20px;
 }
