@@ -7,6 +7,15 @@ function submitForm() {
         method: 'POST',
         body: JSON.stringify({
             "name":name,
+            "descriptib_name":descriptib_name,
+            "surname":surname,
+            "nikename":nikename,
+            "who_get_nickname":who_get_nickname,
+            "work":work,
+            "and_wealthy":and_wealthy,
+            "age_at_death":age_at_death,
+            "first_appears":first_appears,
+            "img":img
         }),
         headers: {
             'Content-Type': 'application/json'
