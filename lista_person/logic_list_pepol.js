@@ -53,7 +53,7 @@ function searchFunction() {
 
     const fullName = `${user.name} ${user.surname}`;
     const nickname = user.who_get_nickname ? `(${user.who_get_nickname})` : '';
-    const age = user.age_at_death === 1000 ? '' : user.age_at_death; // "∞" per indicare età infinita
+    const age = user.age_at_death === 1000 ? '' : user.age_at_death; // eta morto
     // non tocare gli ` apici
     card.innerHTML = `
         <img src="/imeg/icons8-user-96.png" class="card-img-top mx-auto mt-3" style="max-width:50px;" alt="Picture of ${fullName}">
