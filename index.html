@@ -12,6 +12,7 @@
         <link rel="icon" href="/imgini/logo_cpb_v02.png" type="image/x-icon">
         <link rel="stylesheet" href="/imgini/logo_stayl.css">
         <link rel="stylesheet" href="/home/main_stayl.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
 
@@ -34,16 +35,39 @@
 
         <ul class="nav nav-tabs bg-dark navbar-dark">
           <li class="nav-item">
-            <a class="nav-link text-white" href="/lista_person/list_pepol.html">List people</a>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/add_it/ad_book.html">add book</a>
+            <a class="nav-link text-white" href="#">Autori</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link text-white" href="/add_it/ad_pepol.html">add pepol</a>
+          
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Autori
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link text-black" href="#">login autori</a></li>
+                <li><a class="nav-link text-black" href="#">sing up</a></li>
+              </ul>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Book
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link text-black" href="/add_it/ad_book.html">add book</a></li>
+              <li><a class="nav-link text-black" href="/list_book/list_book.html">list book</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/list_book/list_book.html">list book</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              People
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link text-black" href="/add_it/ad_pepol.html">add pepol</a></li>
+              <li><a class="nav-link text-black" href="/lista_person/list_pepol.html">List people</a></li>
+            </ul>
           </li>
         </ul>
         
