@@ -1,0 +1,17 @@
+.password-input {
+    position: relative;
+  }
+  
+  .password-input input {
+    padding-right: 30px;
+  }
+  
+  .password-input button.show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
