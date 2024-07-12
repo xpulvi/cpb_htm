@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/imgini/logo_stayl.css">
         <link rel="stylesheet" href="/home/main_stayl.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/add_it/order_forms.js"></script>
     </head>
     <body>
 
@@ -20,8 +21,8 @@
 
           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/init/front_end/index.html">
-                <img src="imgini/logo_cpb_v02.png" class="logo_row">                    
+              <a class="navbar-brand" href="/index.html">
+                <img src="/imgini/logo_cpb_v02.png" class="logo_row">                    
                     
               </a>
   
@@ -86,22 +87,116 @@
           
             <div class="row text-white">
               <h3>cosa fa questa web app:</h3>
+
             </div>
 
             
           
           <div class="row justify-content-center">
             <div class="col-4">
-              <img src="imgini/bot_scrive_v1.jpeg" alt="">
+              <img src="/imgini/bot_scrive_v1.jpeg" alt="">
             </div>
+
             <div class="col-4">
-              
+              <select id="form_selector">
+                <option value="form_page_book">Form book</option>
+                <option value="json_ad_pepol">Form character</option>
+              </select>
+
+               <div id="form_page_book">
+                <h4>form Book</h4>
+              <form action="" method="post" id="json_ad_book">
+
+                <div class="mb-3">
+                  <label for="title" class="form-label"> title</label>
+                  <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">author</label>
+                  <input type="text" class="form-control" id="author">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Year Publication</label>
+                  <input type="date" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">genre</label>
+                  <input type="text" class="form-control" id="genre">
+                </div>
+
+                <select class="form-select" aria-label="Default select example" id="cover">
+                  <option selected>select cover</option>
+                  <option value="1">non a cover</option>
+                  <option value="2">cover</option>
+                </select>
+                
+
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">collection</label>
+                  <input type="text" class="form-control" id="collection">
+                </div>
+      
+                
+                <button type="button" onclick="submitForm()" class="btn btn-primary">Submit</button>
+              </form>
               <p>
                 metti qui i form
               </p>
+            
             </div>
+            
           </div>
-          
+
+          <div class="col-4">
+            <h4>form ad character</h4>
+              <form class="add_pepol_form" id="json_ad_pepol">
+
+                <div class="row align-items-start">
+                    <div class="col">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br><br>
+                
+                        <label for="descriptib_name">Descriptive Name:</label><br>
+                        <input type="text" id="descriptib_name" name="descriptib_name"><br><br>
+                
+                        <label for="surname">Surname:</label><br>
+                        <input type="text" id="surname" name="surname"><br><br>
+
+                        <label for="nickname">Nickname:</label><br>
+                        <input type="text" id="nickname" name="nickname"><br><br>
+                    </div>
+                    <div class="col">
+                        
+                
+                        <label for="who_get_nickname">Who gave the nickname:</label><br>
+                        <input type="text" id="who_get_nickname" name="who_get_nickname"><br><br>
+                
+                        <label for="work">Work:</label><br>
+                        <input type="text" id="work" name="work"><br><br>
+                
+                        <label for="and_wealthy">Wealth Status:</label><br>
+                        <input type="text" id="and_wealthy" name="and_wealthy"><br><br>
+                
+                        
+                    </div>
+                  
+                </div>
+        
+                <label for="age_at_death">Age at Death:</label><br>
+                <input type="text" id="age_at_death" name="age_at_death"><br><br>
+                
+                <label for="first_appears">First Appearance:</label><br>
+                <input type="text" id="first_appears" name="first_appears"><br><br>
+        
+                <label for="img">Image:</label><br>
+                <input type="file" id="img" name="img" ><br><br>
+        
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+          </div>
          
         </div>
       </main>
